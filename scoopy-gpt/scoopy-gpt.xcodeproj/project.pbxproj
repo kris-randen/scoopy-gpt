@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEB927DF2B52F99A00AB6670 /* scoopy_gptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB927DE2B52F99A00AB6670 /* scoopy_gptApp.swift */; };
+		EEB927E12B52F99A00AB6670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB927E02B52F99A00AB6670 /* ContentView.swift */; };
+		EEB927E32B52F99C00AB6670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB927E22B52F99C00AB6670 /* Assets.xcassets */; };
+		EEB927E72B52F99C00AB6670 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB927E62B52F99C00AB6670 /* Preview Assets.xcassets */; };
+		EEB927F12B52F99D00AB6670 /* scoopy_gptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB927F02B52F99D00AB6670 /* scoopy_gptTests.swift */; };
+		EEB927FB2B52F99D00AB6670 /* scoopy_gptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB927FA2B52F99D00AB6670 /* scoopy_gptUITests.swift */; };
+		EEB927FD2B52F99D00AB6670 /* scoopy_gptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB927FC2B52F99D00AB6670 /* scoopy_gptUITestsLaunchTests.swift */; };
+		EEB9280B2B52FB3500AB6670 /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = EEB9280A2B52FB3500AB6670 /* SiriWaveView */; };
+		EEB9280E2B52FB7700AB6670 /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = EEB9280D2B52FB7700AB6670 /* XCAOpenAIClient */; };
+		EEB928132B53019E00AB6670 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB928122B53019E00AB6670 /* Models.swift */; };
+		EEB928152B53022800AB6670 /* ScoopyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB928142B53022800AB6670 /* ScoopyViewModel.swift */; };
+		EEB928182B53029C00AB6670 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB928172B53029C00AB6670 /* Constants.swift */; };
+		EEB9281A2B530DC600AB6670 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB928192B530DC600AB6670 /* Colors.swift */; };
+		EEB9281C2B5310F000AB6670 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9281B2B5310EF00AB6670 /* Fonts.swift */; };
+		EEB9281E2B5318F900AB6670 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9281D2B5318F900AB6670 /* Extensions.swift */; };
+		EEB928202B53195A00AB6670 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9281F2B53195A00AB6670 /* Protocols.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEB927ED2B52F99D00AB6670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB927D32B52F99A00AB6670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEB927DA2B52F99A00AB6670;
+			remoteInfo = "scoopy-gpt";
+		};
+		EEB927F72B52F99D00AB6670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB927D32B52F99A00AB6670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEB927DA2B52F99A00AB6670;
+			remoteInfo = "scoopy-gpt";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EEB927DB2B52F99A00AB6670 /* scoopy-gpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scoopy-gpt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB927DE2B52F99A00AB6670 /* scoopy_gptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoopy_gptApp.swift; sourceTree = "<group>"; };
+		EEB927E02B52F99A00AB6670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEB927E22B52F99C00AB6670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEB927E42B52F99C00AB6670 /* scoopy_gpt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = scoopy_gpt.entitlements; sourceTree = "<group>"; };
+		EEB927E62B52F99C00AB6670 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEB927EC2B52F99D00AB6670 /* scoopy-gptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scoopy-gptTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB927F02B52F99D00AB6670 /* scoopy_gptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoopy_gptTests.swift; sourceTree = "<group>"; };
+		EEB927F62B52F99D00AB6670 /* scoopy-gptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scoopy-gptUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB927FA2B52F99D00AB6670 /* scoopy_gptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoopy_gptUITests.swift; sourceTree = "<group>"; };
+		EEB927FC2B52F99D00AB6670 /* scoopy_gptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoopy_gptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EEB928122B53019E00AB6670 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EEB928142B53022800AB6670 /* ScoopyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoopyViewModel.swift; sourceTree = "<group>"; };
+		EEB928172B53029C00AB6670 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEB928192B530DC600AB6670 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		EEB9281B2B5310EF00AB6670 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EEB9281D2B5318F900AB6670 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EEB9281F2B53195A00AB6670 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEB927D82B52F99A00AB6670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB9280E2B52FB7700AB6670 /* XCAOpenAIClient in Frameworks */,
+				EEB9280B2B52FB3500AB6670 /* SiriWaveView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB927E92B52F99D00AB6670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB927F32B52F99D00AB6670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEB927D22B52F99A00AB6670 = {
+			isa = PBXGroup;
+			children = (
+				EEB927DD2B52F99A00AB6670 /* scoopy-gpt */,
+				EEB927EF2B52F99D00AB6670 /* scoopy-gptTests */,
+				EEB927F92B52F99D00AB6670 /* scoopy-gptUITests */,
+				EEB927DC2B52F99A00AB6670 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEB927DC2B52F99A00AB6670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEB927DB2B52F99A00AB6670 /* scoopy-gpt.app */,
+				EEB927EC2B52F99D00AB6670 /* scoopy-gptTests.xctest */,
+				EEB927F62B52F99D00AB6670 /* scoopy-gptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEB927DD2B52F99A00AB6670 /* scoopy-gpt */ = {
+			isa = PBXGroup;
+			children = (
+				EEB928112B52FE5300AB6670 /* Models */,
+				EEB928102B52FE4E00AB6670 /* Views */,
+				EEB9280F2B52FE4500AB6670 /* ViewModels */,
+				EEB927DE2B52F99A00AB6670 /* scoopy_gptApp.swift */,
+				EEB927E22B52F99C00AB6670 /* Assets.xcassets */,
+				EEB927E42B52F99C00AB6670 /* scoopy_gpt.entitlements */,
+				EEB928162B53028500AB6670 /* Utils */,
+				EEB927E52B52F99C00AB6670 /* Preview Content */,
+			);
+			path = "scoopy-gpt";
+			sourceTree = "<group>";
+		};
+		EEB927E52B52F99C00AB6670 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EEB927E62B52F99C00AB6670 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEB927EF2B52F99D00AB6670 /* scoopy-gptTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEB927F02B52F99D00AB6670 /* scoopy_gptTests.swift */,
+			);
+			path = "scoopy-gptTests";
+			sourceTree = "<group>";
+		};
+		EEB927F92B52F99D00AB6670 /* scoopy-gptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEB927FA2B52F99D00AB6670 /* scoopy_gptUITests.swift */,
+				EEB927FC2B52F99D00AB6670 /* scoopy_gptUITestsLaunchTests.swift */,
+			);
+			path = "scoopy-gptUITests";
+			sourceTree = "<group>";
+		};
+		EEB9280F2B52FE4500AB6670 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EEB928142B53022800AB6670 /* ScoopyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EEB928102B52FE4E00AB6670 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEB9281B2B5310EF00AB6670 /* Fonts.swift */,
+				EEB928192B530DC600AB6670 /* Colors.swift */,
+				EEB927E02B52F99A00AB6670 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEB928112B52FE5300AB6670 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEB928122B53019E00AB6670 /* Models.swift */,
+				EEB9281F2B53195A00AB6670 /* Protocols.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEB928162B53028500AB6670 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EEB928172B53029C00AB6670 /* Constants.swift */,
+				EEB9281D2B5318F900AB6670 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEB927DA2B52F99A00AB6670 /* scoopy-gpt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB928002B52F99D00AB6670 /* Build configuration list for PBXNativeTarget "scoopy-gpt" */;
+			buildPhases = (
+				EEB927D72B52F99A00AB6670 /* Sources */,
+				EEB927D82B52F99A00AB6670 /* Frameworks */,
+				EEB927D92B52F99A00AB6670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "scoopy-gpt";
+			packageProductDependencies = (
+				EEB9280A2B52FB3500AB6670 /* SiriWaveView */,
+				EEB9280D2B52FB7700AB6670 /* XCAOpenAIClient */,
+			);
+			productName = "scoopy-gpt";
+			productReference = EEB927DB2B52F99A00AB6670 /* scoopy-gpt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEB927EB2B52F99D00AB6670 /* scoopy-gptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB928032B52F99D00AB6670 /* Build configuration list for PBXNativeTarget "scoopy-gptTests" */;
+			buildPhases = (
+				EEB927E82B52F99D00AB6670 /* Sources */,
+				EEB927E92B52F99D00AB6670 /* Frameworks */,
+				EEB927EA2B52F99D00AB6670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEB927EE2B52F99D00AB6670 /* PBXTargetDependency */,
+			);
+			name = "scoopy-gptTests";
+			productName = "scoopy-gptTests";
+			productReference = EEB927EC2B52F99D00AB6670 /* scoopy-gptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEB927F52B52F99D00AB6670 /* scoopy-gptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB928062B52F99D00AB6670 /* Build configuration list for PBXNativeTarget "scoopy-gptUITests" */;
+			buildPhases = (
+				EEB927F22B52F99D00AB6670 /* Sources */,
+				EEB927F32B52F99D00AB6670 /* Frameworks */,
+				EEB927F42B52F99D00AB6670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEB927F82B52F99D00AB6670 /* PBXTargetDependency */,
+			);
+			name = "scoopy-gptUITests";
+			productName = "scoopy-gptUITests";
+			productReference = EEB927F62B52F99D00AB6670 /* scoopy-gptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEB927D32B52F99A00AB6670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					EEB927DA2B52F99A00AB6670 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					EEB927EB2B52F99D00AB6670 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EEB927DA2B52F99A00AB6670;
+					};
+					EEB927F52B52F99D00AB6670 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EEB927DA2B52F99A00AB6670;
+					};
+				};
+			};
+			buildConfigurationList = EEB927D62B52F99A00AB6670 /* Build configuration list for PBXProject "scoopy-gpt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEB927D22B52F99A00AB6670;
+			packageReferences = (
+				EEB928092B52FB3500AB6670 /* XCRemoteSwiftPackageReference "SiriWaveView" */,
+				EEB9280C2B52FB7700AB6670 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */,
+			);
+			productRefGroup = EEB927DC2B52F99A00AB6670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEB927DA2B52F99A00AB6670 /* scoopy-gpt */,
+				EEB927EB2B52F99D00AB6670 /* scoopy-gptTests */,
+				EEB927F52B52F99D00AB6670 /* scoopy-gptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEB927D92B52F99A00AB6670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB927E72B52F99C00AB6670 /* Preview Assets.xcassets in Resources */,
+				EEB927E32B52F99C00AB6670 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB927EA2B52F99D00AB6670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB927F42B52F99D00AB6670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEB927D72B52F99A00AB6670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB9281C2B5310F000AB6670 /* Fonts.swift in Sources */,
+				EEB928182B53029C00AB6670 /* Constants.swift in Sources */,
+				EEB9281A2B530DC600AB6670 /* Colors.swift in Sources */,
+				EEB928202B53195A00AB6670 /* Protocols.swift in Sources */,
+				EEB9281E2B5318F900AB6670 /* Extensions.swift in Sources */,
+				EEB928132B53019E00AB6670 /* Models.swift in Sources */,
+				EEB928152B53022800AB6670 /* ScoopyViewModel.swift in Sources */,
+				EEB927E12B52F99A00AB6670 /* ContentView.swift in Sources */,
+				EEB927DF2B52F99A00AB6670 /* scoopy_gptApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB927E82B52F99D00AB6670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB927F12B52F99D00AB6670 /* scoopy_gptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB927F22B52F99D00AB6670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB927FB2B52F99D00AB6670 /* scoopy_gptUITests.swift in Sources */,
+				EEB927FD2B52F99D00AB6670 /* scoopy_gptUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEB927EE2B52F99D00AB6670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEB927DA2B52F99A00AB6670 /* scoopy-gpt */;
+			targetProxy = EEB927ED2B52F99D00AB6670 /* PBXContainerItemProxy */;
+		};
+		EEB927F82B52F99D00AB6670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEB927DA2B52F99A00AB6670 /* scoopy-gpt */;
+			targetProxy = EEB927F72B52F99D00AB6670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EEB927FE2B52F99D00AB6670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEB927FF2B52F99D00AB6670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EEB928012B52F99D00AB6670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "scoopy-gpt/scoopy_gpt.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"scoopy-gpt/Preview Content\"";
+				DEVELOPMENT_TEAM = R5955V6BN9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please provide access to microphone so scoopy can help you.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fit.scoop.scoopy-gpt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		EEB928022B52F99D00AB6670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "scoopy-gpt/scoopy_gpt.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"scoopy-gpt/Preview Content\"";
+				DEVELOPMENT_TEAM = R5955V6BN9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please provide access to microphone so scoopy can help you.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fit.scoop.scoopy-gpt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		EEB928042B52F99D00AB6670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5955V6BN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fit.scoop.scoopy-gptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scoopy-gpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/scoopy-gpt";
+			};
+			name = Debug;
+		};
+		EEB928052B52F99D00AB6670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5955V6BN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fit.scoop.scoopy-gptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scoopy-gpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/scoopy-gpt";
+			};
+			name = Release;
+		};
+		EEB928072B52F99D00AB6670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5955V6BN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fit.scoop.scoopy-gptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "scoopy-gpt";
+			};
+			name = Debug;
+		};
+		EEB928082B52F99D00AB6670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5955V6BN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fit.scoop.scoopy-gptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "scoopy-gpt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEB927D62B52F99A00AB6670 /* Build configuration list for PBXProject "scoopy-gpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB927FE2B52F99D00AB6670 /* Debug */,
+				EEB927FF2B52F99D00AB6670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB928002B52F99D00AB6670 /* Build configuration list for PBXNativeTarget "scoopy-gpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB928012B52F99D00AB6670 /* Debug */,
+				EEB928022B52F99D00AB6670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB928032B52F99D00AB6670 /* Build configuration list for PBXNativeTarget "scoopy-gptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB928042B52F99D00AB6670 /* Debug */,
+				EEB928052B52F99D00AB6670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB928062B52F99D00AB6670 /* Build configuration list for PBXNativeTarget "scoopy-gptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB928072B52F99D00AB6670 /* Debug */,
+				EEB928082B52F99D00AB6670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEB928092B52FB3500AB6670 /* XCRemoteSwiftPackageReference "SiriWaveView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SiriWaveView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EEB9280C2B52FB7700AB6670 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAOpenAIClient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEB9280A2B52FB3500AB6670 /* SiriWaveView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEB928092B52FB3500AB6670 /* XCRemoteSwiftPackageReference "SiriWaveView" */;
+			productName = SiriWaveView;
+		};
+		EEB9280D2B52FB7700AB6670 /* XCAOpenAIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEB9280C2B52FB7700AB6670 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */;
+			productName = XCAOpenAIClient;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EEB927D32B52F99A00AB6670 /* Project object */;
+}
